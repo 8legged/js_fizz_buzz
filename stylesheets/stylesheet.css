@@ -52,7 +52,7 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #6d6d6d;
-  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
 }
 
@@ -181,7 +181,8 @@ code {
 pre {
   padding: 20px;
   overflow: auto;
-  color: #797979;
+  /*color: #f2f2f2;*/
+  color: #545454; /* Darkened to fix invisible text in parts of gists. */
   text-shadow: none;
   background: #303030;
 }
@@ -227,7 +228,7 @@ th {
 
 td {
   font-weight: 300;
-  text-align: center;
+  /*text-align: center;*/  /* this was screwing up formatting in gists */
   border: 1px solid #ebebeb;
 }
 
