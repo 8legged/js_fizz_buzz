@@ -173,9 +173,9 @@ code, pre {
 }
 
 code {
-  padding: 0 3px;
+  padding: 0;  /* too many gist borders showing: padding: 0 3px; */
   background-color: #f2f2f2;
-  border: solid 1px #ddd;
+  border: 0; /* too many gist borders showing: border: solid 1px #ddd; */
 }
 
 pre {
@@ -328,6 +328,16 @@ footer a:hover {
 }
 
 /* MISC */
+.gist .gist-file {
+  border: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom-width: 0 !important;
+}
+
+.highlight {
+  border: 0 !important;
+}
+
 .clearfix:after {
   display: block;
   height: 0;
